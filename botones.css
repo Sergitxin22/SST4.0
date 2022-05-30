@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400'");
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap');
+ 
+form {
+    width: 100%;
+    text-align: center;
+}
+
+form h1 {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form input[type="radio"]:checked + .box {
+    background-color: #007e90;
+}
+
+form input[type="radio"]:checked + .box span {
+    color: white;
+    transform: translateY(70px);
+}
+
+form input[type="radio"]:checked + .box span:before {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+form .box {
+    padding: 6px 55px;
+    margin-right: 33px;
+    margin-top: 23px;
+    background-color: #2b2d42;
+    color: #f8f8f8;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Oxanium', cursive;
+    font-weight: 500;
+}
+
+form .puntuacion {
+    padding: 6px 20px;
+}
+
+@media screen and (max-width: 480px) {
+    form .box {
+        padding: 6px 40px;
+        margin-top: 10px;
+        width: 210px;
+    }    
+
+    form .puntuacion {
+        padding: 6px 10px;
+        max-width: 45px;
+    }
+}
