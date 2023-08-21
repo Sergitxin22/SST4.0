@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: "Mulish";
+    src: 
+        url(assets/fonts/mulish.woff) format("woff"),
+        url(assets/fonts/mulish.ttf) format("truetype");
+    font-display: swap;
+}
 
 :root {
     --fuenteLogo: 'ABeeZee', sans-serif;
